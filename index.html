@@ -6,6 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+        <style>
+        .profile-img {
+        width: 280px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px; 
+        display: block;
+        margin: 0 auto;      
+        }
+
+        .hero {
+        background: linear-gradient(to right, #0d6efd, #6610f2);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+        }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-primary navbar-dark justify-content-center">
@@ -28,11 +46,12 @@
             </div>
         </nav>
         <section class="container my-5">
-  <div class="row align-items-center">
-    <div class="col-md-4 text-center mb-4 mb-md-0">
-      <img src="img/about-me.jpg" alt="Sadie Bean" class="img-fluid" style="max-width: 200px;">
-        <h1>Hi, I'm Sadie!</h1>
-    </div>
+    <header class="hero rounded">
+        <img src="img/about-me.jpg" alt="Profile picture" class="profile-img mb-3">
+            <h1>Hello, I'm Sadie!</h1>
+                <p class="lead">Traveler • Developer • Storyteller • Lighter</p>
+    </header>
+    
     <div class="container py-5">
     <h2 class="section-title text-center">About Me</h2>
     <div class="row justify-content-center">
